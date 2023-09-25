@@ -1,0 +1,441 @@
+/* Website References: */
+/* https://mallofindonesia.com/ */
+/* https://www.grand-indonesia.com/ */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.logo{
+    width: 300px;
+    cursor: pointer;
+}
+
+.container1{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.5)), url(assets/banner.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.container2{
+    width: 100%;
+    height: 700px;
+    background-color: white;
+    background-size: cover;
+    background-position: center;
+}
+
+.container3{
+    width: 100%;
+    height:755px;
+    background-color: white;
+    background-size: cover;
+    background-position: center;
+}
+
+.container3 p{
+    padding: 0 270px;
+    padding-top: 2.6%;
+    position: relative;
+    font-weight: 300;
+    font-size: 16.65px;
+}
+
+.container4{
+    height: 100vh;
+    background: white;
+}
+
+.containerAbout{
+    width: 100%;
+    height: 50vh;
+    background-image: url(assets/AboutBG.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.aboutBox{
+    background-color: rgb(25, 25, 25);
+    width: 100%;
+    height: 124px;
+    top: 285px;
+    position: relative;
+}
+
+.contactBox{
+    background: white;
+    display: flex;
+}
+
+.contactLeft{
+    flex-basis: 60%;
+    padding: 40px 60px;
+}
+
+.contactRight{
+    flex-basis: 40%;
+    padding: 40px;
+    background: rgb(25, 25, 25);
+    color: white;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.inputRow{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.inputRow .inputGroup{
+    flex-basis: 45%;
+}
+
+input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    padding-top: 5px;
+}
+
+label{
+    margin-bottom: 6px;
+    display: block;
+    color: rgb(25, 25, 25);
+}
+
+button{
+    background: rgb(25, 25, 25);
+    width: 100px;
+    border: none;
+    outline: none;
+    height: 35px;
+    border-radius: 15px;
+    margin-top: 20px;
+    transition: ease-out 0.3s;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    box-shadow: inset 0 0 0 0 rgb(255, 0, 70);
+    cursor: pointer;
+}
+
+button:hover{
+    box-shadow: inset 100px 0 0 0 rgb(255, 0, 70);
+}
+
+.contactLeft h3{
+    color: rgb(25, 25, 25);
+    font-weight: 600px;
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+.contactRight h3{
+    font-weight: 600px;
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+textarea{
+    width: 100%;
+    border: 1px solid #ccc;
+    outline: none;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.header{
+    background-color: rgb(25, 25, 25);
+    width: 100%;
+    height: 100px;
+    top: 0;
+    position: relative;
+}
+
+.navbar{
+    width: 90%;
+    margin: auto;
+    padding: 11px;
+    display: flex;
+    font-size: 25px;
+    font-weight: 350;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 20px;
+    margin-left: 50px;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.navbar ul li a::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: white;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.2s;
+}
+
+.navbar ul li a:hover::after{
+    width: 100%;
+}
+
+.content{
+    width: 100%;
+    position: absolute;
+    top: 380px;
+    text-align: center;
+    color: white;
+}
+
+.content h1{
+    font-size: 70px;
+    margin-top: 15px;
+}
+
+.content p{
+    line-height: 25px;
+    font-size: 30px;
+    font-weight: 100;
+}
+
+.content1{
+    position: absolute;
+    padding-top: 35px;
+    padding-left: 5.5%;
+    padding-right: 20%;
+    color: white;
+}
+
+.content1 h1{
+    font-size: 40px;
+    margin-top: 15px;
+}
+
+.content1 p{
+    line-height: 25px;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.content2{
+    padding-top: 35px;
+    padding-left: 5.5%;
+    padding-right: 20%;
+    padding-bottom: 3%;
+    color: rgb(25, 25, 25);
+}
+
+.content2 h1{
+    font-size: 40px;
+    margin-top: 15px;
+}
+
+.content2 p{
+    line-height: 25px;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.news{
+    text-align: center;
+    transform: translateY(27%);
+    font-weight: 100;
+    text-decoration: underline rgb(25, 25, 25) 3px;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.grid1{
+    padding-top: 180px;
+    padding-left: 5%;
+    position: absolute;
+}
+
+.grid3{
+    padding-top: 180px;
+    padding-left: 35%;
+    position: absolute;
+}
+
+.grid4{
+    padding-top: 180px;
+    padding-left: 65%;
+    position: absolute;
+}
+
+.grid2{
+    padding-top: 495px;
+    padding-left: 5%;
+    position: absolute;
+}
+
+.grid5{
+    padding-top: 495px;
+    padding-left: 35%;
+    position: absolute;
+}
+
+.grid6{
+    padding-top: 495px;
+    padding-left: 65%;
+    position: absolute;
+}
+
+.box1, .box2, .box3, .box4, .box5, .box6{
+    background-color: white;
+    margin-inline: 50px;
+    height: 240px;
+    width: 420px;
+    border-radius: 5px;
+    text-align: left;
+    padding: 20px;
+}
+
+.box2 ul{
+    margin-left: 20px;
+}
+.box3 ul{
+    margin-left: 20px;
+}
+.box5 ul{
+    margin-left: 20px;
+}
+
+.sliderFrame{
+    overflow: hidden;
+    height: 800px;
+    width: 1200;
+    margin-left: 360px;
+    margin-top: 75px;
+    text-align: center;
+}
+
+@-webkit-keyframes slideAnimation{
+    0% {left: 0px;}
+    10% {left: 0px;}
+    20% {left: 1200px;}
+    30% {left: 1200px;}
+    40% {left: 2400px;}
+    50% {left: 2400px;}
+    60% {left: 1200px;}
+    70% {left: 1200px;}
+    80% {left: 0px;}
+    90% {left: 0px;}
+    100% {left: 0px;}
+}
+
+.slideImages{
+    width: 3600px;
+    height: 800px;
+    margin: 0 0 0 -2400px;
+    position: relative;
+    -webkit-animation-name: slideAnimation;
+    -webkit-animation-duration: 20s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: reverse;
+    -webkit-animation-play-state: running;
+}
+
+.imgContainer{
+    height: 800px;
+    width: 1200px;
+    position: relative;
+    float: left;
+}
+
+.imgContainer img{
+    cursor: pointer;
+}
+
+.footer{
+    padding-top: 60px;
+    background-color: white;
+    width: 100%;
+    height: 150px;
+    background-position: bottom;
+    border-top: 3px solid rgb(25, 25, 25);
+    position: relative;
+}
+
+.footer .socials{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    list-style: none;
+    bottom: 25px;
+    position: relative;
+}
+
+.footer .socials a{
+    display: inline-block;
+    justify-content: space-between;
+    margin-inline: 15px;
+}
+
+.footer ul{
+    list-style: none;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.footer ul li{
+    display: inline-block;
+    padding: 0 10px;
+    font-size: 18px;
+    position: relative;
+}
+
+.footer ul li a{
+    text-decoration: none;
+    color: rgb(25, 25, 25);
+}
+
+.footer ul li a::after{
+    content: '';
+    height: 2px;
+    width: 0;
+    background: rgb(25, 25, 25);
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.2s;
+}
+
+.footer ul li a:hover::after{
+    width: 100%;
+}
+
+.footer .bistime{
+    position: absolute;
+    padding-left: 90px;
+    padding-top: 9px;
+    font-size: 25px;
+    font-weight: 100;
+}
+
+.footer p{
+    text-align: center;
+    padding: 20px 0;
+    font-weight: 500;
+    font-size: 15px;
+    color: rgb(25, 25, 25);
+}
